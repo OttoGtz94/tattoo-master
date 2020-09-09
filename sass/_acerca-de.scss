@@ -1,0 +1,145 @@
+.acerca-de {
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    //position: absolute;
+    //position: fixed;
+    background: black;
+    //top: 100%;
+    display: block;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .cabecera {
+        background: url('../img/fondo-acerca-de-black.jpg') ;
+        width: 100%;
+        height: 51vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding: 10px 0px;
+        .contenedor-foto {
+            width: 180px;
+            margin: 0px auto;
+            
+            img {
+                width: 100%;
+                margin: 15px 0px;
+                box-shadow: -3px -3px 1px black;
+                transition: 1s ease-in-out;
+            }
+
+            img:hover {
+                box-shadow: 3px 3px 1px black;
+                transform: scale(1.1) rotate(10deg);
+            }
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .redes-sociales {
+            //display: block;
+            //background: green;
+            width: 40px;
+            position: relative;
+            top: -80%;
+            
+
+            a {
+                display: block;
+                text-align: center;
+                //margin: 5px 0px;
+                //border: 2px solid black;
+                padding: 5px;
+
+                i {
+                    font-size: 1.27em;
+                    margin: 5px 0px;
+                    transition: 0.7s;
+                }
+
+                .fa-twitter:hover {
+                    font-size: 1.38em;
+                    color: #1da1f2;
+                }
+
+                .fa-facebook-f:hover {
+                    font-size: 1.38em;
+                    color: #3b5998;
+                }
+
+                .fa-instagram:hover {
+                    font-size: 1.38em;
+                    color: #833ab4;
+                }
+
+                .fa-pinterest:hover {
+                    font-size: 1.38em;
+                    color: #bd081c;
+                }
+
+            }
+
+        }
+    }
+
+    .pie {
+        width: 100%;
+        height: 49%;
+        background: $colorBlancoPrincipal;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        //display: inline-block;
+        .contenedor-imagen {
+            width: 40%;
+            //background: green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+                margin: 22px auto;
+                box-shadow: -3px -3px 1px black;
+            }
+
+        }
+
+        .texto {
+            padding: 15px;
+            width: 60%;
+            z-index: 15;
+            display: flex;
+            flex-wrap: wrap;
+
+            // justify-content: center;
+            //align-items: center;
+            h3,
+            p {
+                color: black;
+            }
+
+            p {
+                font-size: 1.39em;
+            }
+        }
+    }
+}
+
+// @keyframes mover {
+//     0% {
+//         /* style */
+//         transform: scale(0.5) rotate(360deg);
+//     }
+//     // 50% 
+//     // 100% {
+//     //  /* style */
+//     // }
+// }

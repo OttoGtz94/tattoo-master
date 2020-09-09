@@ -1,0 +1,34 @@
+$fuentePrincipal: 'PRISTINA';
+$fuenteTitulo: 'RAGE';
+$fuenteResponsive: 'Kalam', cursive;
+$tamanioFuente: 18px;
+$tamanioFuenteLeyenda: 1.38em;
+
+$colorBlancoPrincipal: #D2D2D2;
+$colorBlancoSecundario: #ECECEC;
+$colorAzul: #DFD9FB;
+$colorMorado: #571D43;
+
+// $activeColor: #27ae60; //green
+$activeColor: $colorMorado; //green
+$darkenColor: darken($activeColor, 20%);
+
+
+@font-face {
+	font-family: "PRISTINA";
+	src: url("../css/fuentes/PRISTINA.TTF");
+
+	font-family: "RAGE";
+	src: url("../css/fuentes/RAGE.TTF");
+}
+
+@import "_general.scss";
+@import "_header.scss";
+@import "_acerca-de.scss";
+@import "_mis-trabajos.scss";
+@import "_cotiza.scss";
+@import "_animaciones.scss";
+@import "_nav.scss";
+@import "_idioma.scss";
+@import "_responsive.scss";
+

@@ -1,0 +1,50 @@
+{
+	"es":{
+		"menuInicio":"Inicio",
+		"menuAcerca":"Acerca de mi",
+		"menuTrabajos":"Mis trabajos",
+		"menuCotiza":"Cotiza",
+		"leyenda":"Tatuajes diseñados y hechos a tu medida.",
+		"sobreMi":"Soy un tatuador con más de 5 años de experiencia conociendo los diferentes estilos del arte del tatuaje, así mismo sé como llegar al gusto del cliente porque un tatuaje no solo es una imagen plasmada, también es un significado, una historia, un sentimiento.",
+		"cargarArchivo":"Subir Archivo",
+		"aceptarTerminos":"Aceptar Terminos Y Condiciones",
+		"inputNombre":"Nombre",
+		"inputCorreo":"Correo",
+		"inputPosicion":"Posicion",
+		"inputTamanio":"Tamaño",
+		"inputArea":"Escribe tus comentarios o dudas",
+		"inputEnviar":"Enviar"
+	},
+	"en":{
+		"menuInicio":"Home",
+		"menuAcerca":"About me",
+		"menuTrabajos":"My tattoos",
+		"menuCotiza":"Quote",
+		"leyenda":"Tattoos designed and made to measure.",
+		"sobreMi":"I am a tattoo artist with more than 5 years of experience knowing the different styles of tattoo art, I also know how to get to the client's taste because a tattoo is not only a captured image, it is also a meaning, a story, a feeling.",
+		"cargarArchivo":"File upload",
+		"aceptarTerminos":"Accept terms and conditions",
+		"inputNombre":"Name",
+		"inputCorreo":"Email",
+		"inputPosicion":"Position",
+		"inputTamanio":"Size",
+		"inputArea":"Write your comments or questions",
+		"inputEnviar":"Send"
+	},
+	"pr":{
+		"menuInicio":"Início",
+		"menuAcerca":"Sobre mim",
+		"menuTrabajos":"Meus trabalhos",
+		"menuCotiza":"Cotação",
+		"leyenda":"Tatuagens projetadas e feitas sob medida.",
+		"sobreMi":"Eu sou um tatuador com mais de 5 anos de experiência conhecendo os diferentes estilos de arte da tatuagem, também sei como obter o gosto do cliente porque uma tatuagem não é apenas uma imagem capturada, é também um significado, uma história, um sentimento.",
+		"cargarArchivo":"Subir arquivo",
+		"aceptarTerminos":"Aceita Termos e Condições",
+		"inputNombre":"Nome",
+		"inputCorreo":"Correio eletrônico",
+		"inputPosicion":"Posição",
+		"inputTamanio":"Tamanho",
+		"inputArea":"Escreva seus comentários ou perguntas",
+		"inputEnviar":"Enviar"
+	}
+}

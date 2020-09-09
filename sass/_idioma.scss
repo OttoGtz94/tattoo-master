@@ -1,0 +1,46 @@
+.idioma {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 8000;
+	background: rgba(0,0,0,1);
+	text-align: center;
+	h1 {
+		font-size: 4em;
+		font-family: $fuenteTitulo;
+	}
+	p {
+		font-size: 2em;
+	}
+	.languages {
+		// button {
+		// 	background: url('../img/bandera_mexico.png');
+		// 	//width: 500px;
+		// }
+		width: 50%;
+		//background: red;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px auto;
+		.language {
+			width: 100%;
+			margin: 15px;
+			img {
+				width: 32px;
+			}
+			.translate {
+				width: 25%;
+				height: 2em;
+				background: transparent;
+				margin-left: 10px;
+				cursor: pointer;
+				transition: 0.5s;
+				&:hover {
+					background: #E1E1E1;
+					color: #000;
+				}
+			}
+		}
+
+	}
+}

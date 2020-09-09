@@ -1,0 +1,227 @@
+
+@media screen and (max-width: 1085px) {
+
+	.cotiza {
+		top: 347%;
+		z-index: 0;
+		.ubicacion {
+			.contenedor-body {
+				img {
+					width: 110px;
+				}
+			}
+		}
+		.formulario {
+			.cajas {
+				input {
+					height: 2em;
+				}
+			}
+			.comentarios-subir {
+				textarea {
+					margin:0.5em;
+				}
+				.boton-subir {
+					margin:0.5em;
+				}
+			}
+		}
+	}
+	
+}
+
+@media screen and (max-width: 360px) {
+	/*Idioma*/
+	.idioma {
+		.languages {
+			width: 80%;
+			.language {
+				img {
+					width: 50px;
+				}
+				.translate {
+					border: 2px solid transparent;
+				}
+			}
+		}
+	}
+	/*Menu de navegacion Scroll*/
+	.header {
+		height: 100px;
+		nav {
+			height: 100px;
+			.titulo-nav {
+				display: none;
+				h2 {
+					font-size: 1.1em;
+				}
+			}
+			.menu-navegacion {
+				width: 100%;
+				a {
+					font-size: 1em;
+					margin: 0px 10px;
+				}
+			}
+		}
+	}
+
+	/*Header pagina*/
+	header {
+		.cambiar-idioma {
+			top: 20%;
+		}
+		.fondo {
+			.contenido {
+				.menu {
+					display: flex;
+					justify-content: space-around;
+					flex-wrap: wrap;
+					a {
+						font-size: 1em;
+
+					}
+				}
+				.titulo {
+					h1 {
+						font-size: 2em;
+					}
+				}
+				.leyenda {
+					h2 {
+						font-family: $fuenteTitulo;
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+	/*Acerca de*/
+	.acerca-de {
+		.cabecera {
+			height: 40vh;
+			.contenedor-foto {
+				width: 150px;
+				h3 {
+					font-size: 1.5em;
+					font-family: $fuenteResponsive;
+				}
+			}
+		}
+		.pie {
+			height: 60vh;
+			.contenedor-imagen {
+				width: 100%;
+				img {
+					margin: 10px auto;
+				}
+			}
+			.texto {
+				width: 100%;
+				h3 {
+					font-family: $fuenteResponsive;
+					font-size: 1em;
+				}
+				p {
+					font-family: $fuenteResponsive;
+					font-size: 0.9em;
+				}
+			}
+		}
+	}
+	/*Mis trabajos*/
+	.mis-trabajos {
+		.titulo {
+			h3 {
+				font-family: $fuenteResponsive;
+			}
+		}
+		.gallery {
+			.img-card {
+				width: 50%;
+			}
+		}
+		.modale {
+			padding: 20px 0px 0px 0px;
+			.list {
+				// width: 100%;
+				// height: 10px;
+				display: none;
+			}
+			.img-modal {
+				width: 100%;
+				margin: 50px 0px;
+				#myModalImg {
+					width: 100%;
+					max-height: 10000px;
+				}
+			}
+			.close {
+				position: absolute;
+				right: 0;
+				i {
+					color: #790505;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	/*Cotiza*/ 
+	.cotiza {
+		height: auto;
+
+		.ubicacion {
+			width: 100%;
+			.titulo {
+				h3 {
+					font-family: $fuenteResponsive;
+				}
+			}
+			.contenedor-body {
+				height: 100%;
+				img {
+					height: 80%;
+				}
+			}
+		}
+		.formulario {
+			width: 100%;
+			padding-top: 30px;
+			.cajas {
+				width: 100%;
+				input {
+					width: 90%;
+					border: 2px solid $colorMorado;
+				}
+				input::placeholder {
+					font-family: $fuenteResponsive;
+				}
+			}
+			.comentarios-subir {
+				width: 100%;
+				textarea {
+					width: 90%;
+					max-width: 90%;
+					margin: 0px auto;
+				}
+				.boton-subir {
+					margin: 10px auto;
+					p {
+						font-family: $fuenteResponsive;
+					}
+				}
+				.terminos {
+					p {
+						font-family: $fuenteResponsive;
+						font-size: 1em;
+					}
+				}
+			}
+			.enviar {
+				margin: 0px auto;
+			}
+		}
+	}	
+
+	
+}

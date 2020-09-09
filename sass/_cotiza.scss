@@ -1,0 +1,234 @@
+.cotiza{
+	width: 100%;
+	height: 100vh;
+	z-index: 9;
+	//position: absolute;
+	position: relative;
+	background: url('../img/fondo-cotiza-black.jpg') no-repeat center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	//top: 355%;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	//padding-top: 20px;
+	.ubicacion {
+		width: 22%;
+		height: 100vh;
+		background: url('../img/fondo-body-black.jpg');
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+		//padding: 10px;
+		//text-align: center;
+		z-index: 100;
+		padding-top: 20px;
+		border-right: 0.2px solid black;
+		.titulo { 
+			width: calc(100% - 30px);
+    		margin: 0px 0px 30px 30px;
+		}
+		.contenedor-body{
+			width: 100%;
+			//height: 100vh;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			//align-items: center;
+			padding-top: 50px;
+			
+			img {
+				height: 70%;
+			}
+		}
+	}
+	// .fondo {
+	// 	width: 75%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	background: url('../img/fondo-cotiza.jpg');
+	// 	z-index: 1;
+	// 	right: 0;
+	// 	top: 0;
+	// 	margin:0px;
+	// }
+	.formulario {
+		width: 75%;
+		//background: blue;
+		display: flex;
+		flex-wrap: wrap;
+		//justify-content: center;
+		align-items: center;
+		z-index: 100;
+		overflow: hidden;
+		.cajas {
+			width: 55%;
+			//background: yellow;
+			padding: 5px;
+			input {
+				width: 70%;
+				height: 2.5em;
+				padding: 10px 15px 10px 15px;
+				margin: 0.5em;
+				background: rgba(#DFEDDB,0.0);
+				border: 2px solid transparent;
+				border-bottom: 2px solid $colorMorado;
+				color: $colorAzul;
+				//color: #424741;
+				font-size: 1.2em;
+				&:focus {
+					-webkit-border: 2px solid $colorAzul;
+					-moz-border: 2px solid $colorAzul;
+					-o-border: 2px solid $colorAzul;
+					border: 2px solid $colorAzul;
+				}
+				
+			}
+			input::placeholder {
+				color: rgba($colorAzul, 0.8);
+			}
+		}
+		.comentarios-subir {
+			width: 45%;
+			display: flex;
+			flex-wrap: wrap;
+			//align-items: center;
+			textarea {
+				width: 80%;
+				max-width: 80%;
+				height: 200px;
+				max-height: 200px;
+				min-height: 200px;
+				//color: #424741;
+				color: $colorAzul;
+				padding: 10px 15px;
+				margin: 1em;
+				background: rgba(#DFEDDB,0.3);
+				font-size: 1.2em;
+				border: 2px solid #424741;
+				border-radius: 5px;
+			}
+			textarea::placeholder {
+				color: rgba($colorAzul, 0.8);
+			}
+			.boton-subir {
+				width: 80%;
+				height: 2.5em;
+				padding: 10px;
+				background: rgba($colorMorado,0.3);
+				position: relative;
+				margin: 1em;
+				//border: 2px solid #424741;
+				border-radius: 25px;
+				transition: 1s;
+				cursor: pointer;
+				border: 0.5px solid $colorAzul;
+				&:hover {
+					background: rgba($colorMorado, 1);
+				}
+				p {
+					text-align: center;
+					color: $colorAzul;
+					//color: #424741;
+					font-size: 1.2em;
+					cursor: pointer;
+				}
+				.subir-archivo {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					cursor: pointer;
+				}
+			}
+			.terminos {
+
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				.contenedor-check{
+					width: 28px;
+					height: 28px;
+					position: relative;
+					//margin: 20px auto;
+					background: #fcfff4;
+					background: linear-gradient (top, #fcfff4 0%,
+							 #dfe5d7 40%, #b3bead 100%);
+					box-shadow: inset 0px 1px 1px white,
+							 0px 1px 3px rgba(0,0,0,0.5);
+					label {
+						width: 20px;
+					    height: 20px;
+					    position: absolute;
+					    top: 4px;
+					    left: 4px;
+					    cursor: pointer;
+					    background: linear-gradient
+					    		(top, #222 0%, #45484d 100%);
+					    box-shadow: inset 0px 1px 1px 
+					    	rgba(0,0,0,0.5), 0px 1px 0px 
+					    	rgba(255,255,255,1);
+					    &:after {
+					    	content: '';
+							width: 16px;
+							height: 16px;
+							position: absolute;
+							top: 2px;
+							left: 2px;
+							background: $activeColor;
+							background: linear-gradient
+								(top, $activeColor 0%, 
+									$darkenColor 100%);
+							box-shadow: inset 0px 1px 1px white, 
+									0px 1px 3px rgba(0,0,0,0.5);
+					        opacity: 0;
+					    }
+					    &:hover::after {
+					    	opacity: 0;
+
+					    }
+					}
+					input[type=checkbox] {
+						visibility: hidden;
+						&:checked + label:after {
+							opacity: 1;
+						}
+					}
+				}
+				p {
+					color: $colorAzul;
+					font-size: 1.2em;
+					margin-left: 10px;
+				}
+			}
+		}
+		.enviar {
+			width: 100%;
+			text-align: center;
+			input {
+				height: 2.5em;
+				width: 30%;
+				background: rgba($colorMorado,0.3);
+				border: 0.5px solid $colorAzul;
+				border-radius: 25px;
+				//color: #424741;
+				margin:1em;
+				color: $colorAzul;
+				font-size: 1.2em;
+				transition: 1s;
+				cursor: pointer;
+				&:hover {
+					background: rgba($colorMorado,1);
+				}
+			}
+		}
+	}
+}

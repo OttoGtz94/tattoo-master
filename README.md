@@ -1,3 +1,9 @@
 ## Primeras prácticas con javascript y pug
+Multilenguaje
 
-###Multilenguaje usando jQuery
+Tecnologías usadas:
+HTML5
+Bootstrap
+Pug
+jQuery
+Javascript
